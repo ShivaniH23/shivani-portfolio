@@ -489,10 +489,10 @@
     }
 
     /* ═══════════════════════════════════════════════════
-       EXPERIENCE & EDUCATION TIMELINE
+       EDUCATION & TRAINING TIMELINE
     ═══════════════════════════════════════════════════ */
     #experience { background: rgba(15,23,42,0.4); }
-    .exp-edu-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; }
+    .edu-single { max-width: 700px; margin: 0 auto; }
     .timeline-title { font-family: var(--font-head); font-size: 1.2rem; font-weight: 700; margin-bottom: 28px; display: flex; align-items: center; gap: 10px; }
     .dot-line { flex: 1; height: 1px; background: var(--border); }
     .timeline { position: relative; }
@@ -507,7 +507,6 @@
     .tl-bullets { padding-left: 0; }
     .tl-bullets li { font-size: 0.87rem; color: var(--muted); padding: 3px 0 3px 14px; position: relative; }
     .tl-bullets li::before { content: '▸'; position: absolute; left: 0; color: var(--violet); }
-    @media (max-width: 760px) { .exp-edu-grid { grid-template-columns: 1fr; } }
 
     /* ═══════════════════════════════════════════════════
        CERTIFICATIONS — Horizontal Auto-scroll Strip
@@ -603,7 +602,7 @@
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#experience">Experience</a></li>
+          <li><a href="#experience">Education</a></li>
           <li><a href="#certifications">Certifications</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -622,7 +621,7 @@
     <a href="#about"          class="mobile-link">About</a>
     <a href="#skills"         class="mobile-link">Skills</a>
     <a href="#projects"       class="mobile-link">Projects</a>
-    <a href="#experience"     class="mobile-link">Experience</a>
+    <a href="#experience"     class="mobile-link">Education</a>
     <a href="#certifications" class="mobile-link">Certifications</a>
     <a href="#contact"        class="mobile-link">Contact</a>
     <a href="mailto:shivanich2324@gmail.com" class="mobile-hire">Hire Me →</a>
@@ -900,47 +899,17 @@
 
   <div class="divider"></div>
 
-  <!-- ════════════════════ EXPERIENCE & EDUCATION ════════════════════ -->
+  <!-- ════════════════════ EDUCATION & TRAINING ════════════════════ -->
   <section id="experience" class="section" aria-labelledby="exp-heading">
     <div class="container">
       <span class="section-label reveal">// journey</span>
-      <h2 class="section-title reveal reveal-delay-1" id="exp-heading">Education &amp; Learning</h2>
-      <div class="exp-edu-grid" style="margin-top:48px;">
+      <h2 class="section-title reveal reveal-delay-1" id="exp-heading">Education &amp; Training</h2>
 
-        <!-- Currently Learning -->
+      <div class="edu-single" style="margin-top:48px;">
         <div class="reveal reveal-delay-2">
-          <h3 class="timeline-title">🚀 Currently Learning<span class="dot-line"></span></h3>
+          <h3 class="timeline-title">🎓 Academic &amp; Professional Training<span class="dot-line"></span></h3>
           <div class="timeline">
-            <div class="timeline-item">
-              <div class="tl-dot"></div>
-              <p class="tl-period">2025 – Present</p>
-              <p class="tl-role">Actively Building Projects</p>
-              <p class="tl-org">Self-driven · Bangalore</p>
-              <ul class="tl-bullets">
-                <li>Building &amp; deploying full-stack apps with Spring Boot &amp; React.js</li>
-                <li>Integrating AI APIs — Gemini, Groq Llama3</li>
-                <li>Exploring JWT security, REST API design patterns</li>
-                <li>Contributing to open-source on GitHub</li>
-              </ul>
-            </div>
-            <div class="timeline-item">
-              <div class="tl-dot"></div>
-              <p class="tl-period">2026</p>
-              <p class="tl-role">Anthropic AI Certifications</p>
-              <p class="tl-org">Anthropic · Online</p>
-              <ul class="tl-bullets">
-                <li>AI Fluency: Framework &amp; Foundations</li>
-                <li>Claude Code 101 &amp; Claude Code in Action</li>
-                <li>Practical AI integration in real projects</li>
-              </ul>
-            </div>
-          </div>
-        </div>
 
-        <!-- Education -->
-        <div class="reveal reveal-delay-3">
-          <h3 class="timeline-title">🎓 Education &amp; Training<span class="dot-line"></span></h3>
-          <div class="timeline">
             <div class="timeline-item">
               <div class="tl-dot"></div>
               <p class="tl-period">2022 – 2025</p>
@@ -951,6 +920,7 @@
                 <li>Database management and web development</li>
               </ul>
             </div>
+
             <div class="timeline-item">
               <div class="tl-dot"></div>
               <p class="tl-period">2025 – 2026</p>
@@ -962,10 +932,11 @@
                 <li>HTML / CSS / JavaScript</li>
               </ul>
             </div>
+
           </div>
         </div>
-
       </div>
+
     </div>
   </section>
 
